@@ -5,4 +5,4 @@ $twig = new Twig_Environment(
     ['cache' => $cacheDir]
 );
 
-echo $twig->render('helloworld.html.twig');
+$twig->display('helloworld.html.twig');

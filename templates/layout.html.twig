@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <title>Small overload benchmark</title>
+    </head>
+    <body>
+        {# ---------------------------------------------------------------------------------------------------------- #}
+        {# Create 50 blocks and fill them all
+        {# ---------------------------------------------------------------------------------------------------------- #}
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Create 50 blocks and fill them all</h1>
+                <table class="table table-striped table-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Block content</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1</td>
+                            <td>{% block overloadBlock1 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>{% block overloadBlock2 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#3</td>
+                            <td>{% block overloadBlock3 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#4</td>
+                            <td>{% block overloadBlock4 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#5</td>
+                            <td>{% block overloadBlock5 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#6</td>
+                            <td>{% block overloadBlock6 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#7</td>
+                            <td>{% block overloadBlock7 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#8</td>
+                            <td>{% block overloadBlock8 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#9</td>
+                            <td>{% block overloadBlock9 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#10</td>
+                            <td>{% block overloadBlock10 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#11</td>
+                            <td>{% block overloadBlock11 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#12</td>
+                            <td>{% block overloadBlock12 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#13</td>
+                            <td>{% block overloadBlock13 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#14</td>
+                            <td>{% block overloadBlock14 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#15</td>
+                            <td>{% block overloadBlock15 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#16</td>
+                            <td>{% block overloadBlock16 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#17</td>
+                            <td>{% block overloadBlock17 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#18</td>
+                            <td>{% block overloadBlock18 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#19</td>
+                            <td>{% block overloadBlock19 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#20</td>
+                            <td>{% block overloadBlock20 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#21</td>
+                            <td>{% block overloadBlock21 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#22</td>
+                            <td>{% block overloadBlock22 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#23</td>
+                            <td>{% block overloadBlock23 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#24</td>
+                            <td>{% block overloadBlock24 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#25</td>
+                            <td>{% block overloadBlock25 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#26</td>
+                            <td>{% block overloadBlock26 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#27</td>
+                            <td>{% block overloadBlock27 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#28</td>
+                            <td>{% block overloadBlock28 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#29</td>
+                            <td>{% block overloadBlock29 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#30</td>
+                            <td>{% block overloadBlock30 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#31</td>
+                            <td>{% block overloadBlock31 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#32</td>
+                            <td>{% block overloadBlock32 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#33</td>
+                            <td>{% block overloadBlock33 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#34</td>
+                            <td>{% block overloadBlock34 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#35</td>
+                            <td>{% block overloadBlock35 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#36</td>
+                            <td>{% block overloadBlock36 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#37</td>
+                            <td>{% block overloadBlock37 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#38</td>
+                            <td>{% block overloadBlock38 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#39</td>
+                            <td>{% block overloadBlock39 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#40</td>
+                            <td>{% block overloadBlock40 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#41</td>
+                            <td>{% block overloadBlock41 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#42</td>
+                            <td>{% block overloadBlock42 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#43</td>
+                            <td>{% block overloadBlock43 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#44</td>
+                            <td>{% block overloadBlock44 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#45</td>
+                            <td>{% block overloadBlock45 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#46</td>
+                            <td>{% block overloadBlock46 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#47</td>
+                            <td>{% block overloadBlock47 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#48</td>
+                            <td>{% block overloadBlock48 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#49</td>
+                            <td>{% block overloadBlock49 '' %}</td>
+                        </tr>
+                        <tr>
+                            <td>#50</td>
+                            <td>{% block overloadBlock50 '' %}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        {% block body '' %}
+    </body>
+</html>

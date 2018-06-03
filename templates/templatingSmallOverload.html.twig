@@ -1,0 +1,430 @@
+{# This code has to fill OPCache, so we will not use loop and write duplicated code #}
+
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+
+    {# ---------------------------------------------------------------------------------------------------------- #}
+    {# Create 100 macros and call them all #}
+    {# ---------------------------------------------------------------------------------------------------------- #}
+
+    {% import 'macros.html.twig' as overloadMacros %}
+    ?>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Create 100 macros and call them all</h1>
+            <table class="table table-striped table-sm">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Macro call</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>{{ overloadMacros.overloadMacro1(1) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#2</td>
+                        <td>{{ overloadMacros.overloadMacro2(2) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td>{{ overloadMacros.overloadMacro3(3) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#4</td>
+                        <td>{{ overloadMacros.overloadMacro4(4) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#5</td>
+                        <td>{{ overloadMacros.overloadMacro5(5) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#6</td>
+                        <td>{{ overloadMacros.overloadMacro6(6) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#7</td>
+                        <td>{{ overloadMacros.overloadMacro7(7) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#8</td>
+                        <td>{{ overloadMacros.overloadMacro8(8) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#9</td>
+                        <td>{{ overloadMacros.overloadMacro9(9) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#10</td>
+                        <td>{{ overloadMacros.overloadMacro10(10) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#11</td>
+                        <td>{{ overloadMacros.overloadMacro11(11) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#12</td>
+                        <td>{{ overloadMacros.overloadMacro12(12) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#13</td>
+                        <td>{{ overloadMacros.overloadMacro13(13) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#14</td>
+                        <td>{{ overloadMacros.overloadMacro14(14) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#15</td>
+                        <td>{{ overloadMacros.overloadMacro15(15) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#16</td>
+                        <td>{{ overloadMacros.overloadMacro16(16) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#17</td>
+                        <td>{{ overloadMacros.overloadMacro17(17) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#18</td>
+                        <td>{{ overloadMacros.overloadMacro18(18) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#19</td>
+                        <td>{{ overloadMacros.overloadMacro19(19) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#20</td>
+                        <td>{{ overloadMacros.overloadMacro20(20) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#21</td>
+                        <td>{{ overloadMacros.overloadMacro21(21) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#22</td>
+                        <td>{{ overloadMacros.overloadMacro22(22) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#23</td>
+                        <td>{{ overloadMacros.overloadMacro23(23) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#24</td>
+                        <td>{{ overloadMacros.overloadMacro24(24) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#25</td>
+                        <td>{{ overloadMacros.overloadMacro25(25) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#26</td>
+                        <td>{{ overloadMacros.overloadMacro26(26) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#27</td>
+                        <td>{{ overloadMacros.overloadMacro27(27) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#28</td>
+                        <td>{{ overloadMacros.overloadMacro28(28) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#29</td>
+                        <td>{{ overloadMacros.overloadMacro29(29) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#30</td>
+                        <td>{{ overloadMacros.overloadMacro30(30) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#31</td>
+                        <td>{{ overloadMacros.overloadMacro31(31) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#32</td>
+                        <td>{{ overloadMacros.overloadMacro32(32) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#33</td>
+                        <td>{{ overloadMacros.overloadMacro33(33) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#34</td>
+                        <td>{{ overloadMacros.overloadMacro34(34) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#35</td>
+                        <td>{{ overloadMacros.overloadMacro35(35) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#36</td>
+                        <td>{{ overloadMacros.overloadMacro36(36) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#37</td>
+                        <td>{{ overloadMacros.overloadMacro37(37) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#38</td>
+                        <td>{{ overloadMacros.overloadMacro38(38) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#39</td>
+                        <td>{{ overloadMacros.overloadMacro39(39) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#40</td>
+                        <td>{{ overloadMacros.overloadMacro40(40) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#41</td>
+                        <td>{{ overloadMacros.overloadMacro41(41) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#42</td>
+                        <td>{{ overloadMacros.overloadMacro42(42) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#43</td>
+                        <td>{{ overloadMacros.overloadMacro43(43) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#44</td>
+                        <td>{{ overloadMacros.overloadMacro44(44) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#45</td>
+                        <td>{{ overloadMacros.overloadMacro45(45) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#46</td>
+                        <td>{{ overloadMacros.overloadMacro46(46) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#47</td>
+                        <td>{{ overloadMacros.overloadMacro47(47) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#48</td>
+                        <td>{{ overloadMacros.overloadMacro48(48) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#49</td>
+                        <td>{{ overloadMacros.overloadMacro49(49) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#50</td>
+                        <td>{{ overloadMacros.overloadMacro50(50) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#51</td>
+                        <td>{{ overloadMacros.overloadMacro51(51) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#52</td>
+                        <td>{{ overloadMacros.overloadMacro52(52) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#53</td>
+                        <td>{{ overloadMacros.overloadMacro53(53) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#54</td>
+                        <td>{{ overloadMacros.overloadMacro54(54) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#55</td>
+                        <td>{{ overloadMacros.overloadMacro55(55) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#56</td>
+                        <td>{{ overloadMacros.overloadMacro56(56) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#57</td>
+                        <td>{{ overloadMacros.overloadMacro57(57) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#58</td>
+                        <td>{{ overloadMacros.overloadMacro58(58) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#59</td>
+                        <td>{{ overloadMacros.overloadMacro59(59) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#60</td>
+                        <td>{{ overloadMacros.overloadMacro60(60) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#61</td>
+                        <td>{{ overloadMacros.overloadMacro61(61) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#62</td>
+                        <td>{{ overloadMacros.overloadMacro62(62) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#63</td>
+                        <td>{{ overloadMacros.overloadMacro63(63) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#64</td>
+                        <td>{{ overloadMacros.overloadMacro64(64) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#65</td>
+                        <td>{{ overloadMacros.overloadMacro65(65) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#66</td>
+                        <td>{{ overloadMacros.overloadMacro66(66) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#67</td>
+                        <td>{{ overloadMacros.overloadMacro67(67) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#68</td>
+                        <td>{{ overloadMacros.overloadMacro68(68) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#69</td>
+                        <td>{{ overloadMacros.overloadMacro69(69) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#70</td>
+                        <td>{{ overloadMacros.overloadMacro70(70) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#71</td>
+                        <td>{{ overloadMacros.overloadMacro71(71) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#72</td>
+                        <td>{{ overloadMacros.overloadMacro72(72) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#73</td>
+                        <td>{{ overloadMacros.overloadMacro73(73) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#74</td>
+                        <td>{{ overloadMacros.overloadMacro74(74) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#75</td>
+                        <td>{{ overloadMacros.overloadMacro75(75) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#76</td>
+                        <td>{{ overloadMacros.overloadMacro76(76) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#77</td>
+                        <td>{{ overloadMacros.overloadMacro77(77) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#78</td>
+                        <td>{{ overloadMacros.overloadMacro78(78) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#79</td>
+                        <td>{{ overloadMacros.overloadMacro79(79) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#80</td>
+                        <td>{{ overloadMacros.overloadMacro80(80) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#81</td>
+                        <td>{{ overloadMacros.overloadMacro81(81) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#82</td>
+                        <td>{{ overloadMacros.overloadMacro82(82) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#83</td>
+                        <td>{{ overloadMacros.overloadMacro83(83) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#84</td>
+                        <td>{{ overloadMacros.overloadMacro84(84) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#85</td>
+                        <td>{{ overloadMacros.overloadMacro85(85) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#86</td>
+                        <td>{{ overloadMacros.overloadMacro86(86) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#87</td>
+                        <td>{{ overloadMacros.overloadMacro87(87) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#88</td>
+                        <td>{{ overloadMacros.overloadMacro88(88) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#89</td>
+                        <td>{{ overloadMacros.overloadMacro89(89) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#90</td>
+                        <td>{{ overloadMacros.overloadMacro90(90) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#91</td>
+                        <td>{{ overloadMacros.overloadMacro91(91) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#92</td>
+                        <td>{{ overloadMacros.overloadMacro92(92) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#93</td>
+                        <td>{{ overloadMacros.overloadMacro93(93) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#94</td>
+                        <td>{{ overloadMacros.overloadMacro94(94) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#95</td>
+                        <td>{{ overloadMacros.overloadMacro95(95) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#96</td>
+                        <td>{{ overloadMacros.overloadMacro96(96) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#97</td>
+                        <td>{{ overloadMacros.overloadMacro97(97) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#98</td>
+                        <td>{{ overloadMacros.overloadMacro98(98) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#99</td>
+                        <td>{{ overloadMacros.overloadMacro99(99) }}</td>
+                    </tr>
+                    <tr>
+                        <td>#100</td>
+                        <td>{{ overloadMacros.overloadMacro100(100) }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock %}
